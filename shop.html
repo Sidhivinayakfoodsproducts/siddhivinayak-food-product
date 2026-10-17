@@ -1,0 +1,162 @@
+<shop.html>
+<html lang="mr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Products | Siddhivinayak Foods</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-strip">
+    <div>📍 Maharashtra</div>
+    <div>📞 +91 9881013475</div>
+    <div>🚚 Fresh Farsan</div>
+  </div>
+
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <a href="index.html" class="brand">
+
+      <div class="brand-logo">
+        <img
+          src="images/logo.png"
+          alt="Siddhivinayak Logo"
+          onerror="this.style.display='none'"
+        >
+
+        <span>SV</span>
+      </div>
+
+      <div>
+        <strong>सिद्धिविनायक</strong>
+        <small>FOODS & PRODUCTS</small>
+      </div>
+
+    </a>
+
+
+    <nav class="desktop-nav">
+
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+      <a href="cart.html" class="cart-btn">
+        🛒
+        <span id="cart-count">0</span>
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav">
+
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Cart</a>
+
+  </div>
+
+
+  <!-- PAGE TITLE -->
+  <section class="shop-hero">
+
+    <h1>उपलब्ध फरसाण</h1>
+
+    <p>
+      ताजे आणि चविष्ट फरसाण घरपोच मागवा
+    </p>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+  <main class="shop-container">
+
+    <div class="shop-filter">
+
+      <button
+        class="filter-btn active"
+        onclick="renderShop('All')"
+      >
+        All
+      </button>
+
+      <button
+        class="filter-btn"
+        onclick="renderShop('Farsan')"
+      >
+        Farsan
+      </button>
+
+      <button
+        class="filter-btn"
+        onclick="renderShop('Chevdo')"
+      >
+        Chevdo
+      </button>
+
+      <button
+        class="filter-btn"
+        onclick="renderShop('Namkeen')"
+      >
+        Namkeen
+      </button>
+
+    </div>
+
+
+    <div
+      id="shop-products"
+      class="product-grid"
+    ></div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="copyright">
+
+      📞 +91 9881013475
+      •
+      © 2026 Siddhivinayak Foods & Products
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderShop("All");
+    });
+  </script>
+
+</body>
+
+</html>
